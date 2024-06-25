@@ -12,7 +12,7 @@ fig file
 Download images for this project here
 
 And “Duplicate to your Drafts” to have access to all design details. (if not already done)
-https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/559ad8d43fb61e310e2b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240625%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240625T115339Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b5e0b07dcbf1b974af05e2c1071cd8b8ed6054eb6ad8a0f4320510fef3ebf0a4
+![Sample Image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/559ad8d43fb61e310e2b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240625%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240625T115339Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b5e0b07dcbf1b974af05e2c1071cd8b8ed6054eb6ad8a0f4320510fef3ebf0a4)
 
 Important notes with Figma:
 
@@ -27,3 +27,16 @@ Repo:
 GitHub repository: alx_html_css
 Directory: css_advanced
 File: README.md, index.html
+
+
+1. Import the style
+mandatory
+Before starting the implementation of the Style:
+
+Create the file styles.css
+Import styles.css in the head of your index.html
+Repo:
+
+GitHub repository: alx_html_css
+Directory: css_advanced
+File: index.html, styles.css

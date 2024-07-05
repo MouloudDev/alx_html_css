@@ -1,0 +1,490 @@
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.hero__img1__container {
+    background-color: darkgoldenrod;
+    background-image: url('images/headphones_hero_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 35% center;
+    padding-block: 1rem 2%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation */
+.menu__icon__container,
+.menu__icon {
+    width: 20px;
+    height: 14px;
+}
+
+.close__icon {
+    margin: 1rem 2%;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+#nav__menu__on__mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+ /* show nav__menu__on__mobile when user clicks the menu icon */
+#nav__menu__on__mobile:target {
+    display: block;
+}
+
+/* hide menu icon when nav__menu__on__mobile is visible  */
+#nav__menu__on__mobile:target ~ .menu__icon__container > .menu__icon__link {
+    display: none;
+}
+
+.nav__list__on__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    list-style: none;
+}
+
+.logo__headphones {
+    width: 161px;
+    height: 32px;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: none;
+    list-style: none;
+}
+
+.nav__list a,
+.nav__list__on__mobile a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
+    text-align: left;
+}
+
+.nav__list a:active,
+.nav__list__on__mobile a:active,
+.nav__list a:hover {
+    color: #FF6565;
+}
+
+/* main section */
+
+.main__section {
+    height: fit-content;
+    margin: calc(15rem + 3%) auto 2rem;
+}
+
+.main__section > h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    text-align: center;
+    color: white;
+}
+
+.action__button {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: #FF6565;
+    box-shadow: 0px 2px 20px 0px #00000080;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 162px;
+    height: 44px;
+    margin: 3rem auto 4rem;
+}
+
+.action__button:active,
+.action__button:hover {
+    opacity: 0.9
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    width: calc(100% - 1rem);
+    max-width: 637px;
+    margin-inline: auto;
+}
+
+.main__section > p {
+    color: white;
+}
+
+/* what we do section */
+
+.what__we__do {
+    margin-block: calc(4rem + 2%);
+}
+
+.what__we__do > h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 3rem;
+}
+
+.what__we__do > p {
+    color: black;
+}
+
+.icons__wrapper {
+    margin-top: 4rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.item:not(:first-of-type) {
+    margin-top: 3rem;
+}
+
+.icon__img__wrapper {
+    display: flex;
+    align-items: center;
+    width: 67.59px;
+    height: 76.8px;
+}
+
+.sound__icon {
+    width: 94.2px;
+    height: 65.36px;
+}
+
+.video__icon {
+    width: 67.59px;
+    height: 76.8px;
+}
+
+.music__icon {
+    width: 51.66px;
+    height: 57.27px;
+}
+
+.hearing__icon {
+    width: 61.43px;
+    height: 61.44px;
+}
+
+.item > h3 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #071629;
+    margin-block: .6rem;
+}
+
+.item > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    width: 207px;
+}
+
+/* Results section */
+
+.results {
+    background-image: url('images/headphones_hero_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 35% center;
+    padding: 6rem 0 4rem;
+}
+
+.results > h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.results > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+}
+
+.pentagons__wrapper {
+    margin-top: 3rem;
+}
+
+.pentagon__item {
+    width: 190px;
+    height: 190px;
+    background: #FF6565;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    padding-top: 4rem;
+}
+
+.pentagon__item:not(:first-of-type) {
+    margin-top: 3rem;
+}
+
+.pentagon__item > h3 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.pentagon__item > p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.pentagon__item > h3,
+.pentagon__item > p {
+    line-height: 26px;
+    text-align: center;
+    color: white;
+}
+
+/* Contact us section */
+
+.contact__us {
+    padding: 6rem 2rem 2rem;
+}
+
+.contact__us > h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 3rem;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input,
+textarea {
+    border: none;
+    padding: 3px 6px;
+    width: 100%;
+    max-width: 335px;
+    border-bottom: 1px solid silver;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #071629;
+}
+
+/* Footer  */
+
+footer {
+    background-color: #071629;
+    padding: 4rem 0 3rem;
+}
+
+.footer__content__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__content__wrapper p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15.08px;
+    text-align: center;
+    color: white;
+}
+
+.socials__wrapper {
+    display: flex;
+    gap: 1.8rem;
+}
+
+header,
+.icons__wrapper,
+.pentagons__wrapper,
+.footer__content__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 0 1rem;
+}
+
+/* media queries */
+
+@media (min-width: 480px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+
+    .logo__headphones {
+        margin-inline: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 2rem;
+    }
+
+    #nav__menu__on__mobile,
+    #nav__menu__on__mobile:target {
+        display: none !important;
+    }
+
+    .icons__wrapper,
+    .pentagons__wrapper {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .item:not(:first-of-type),
+    .pentagon__item:not(:first-of-type) {
+        margin-top: 0;
+    }
+
+    .footer__content__wrapper {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        justify-content: space-between;
+        row-gap: 4rem;
+    }
+
+    .footer__content__wrapper p {
+        grid-column: 1 / -1;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .icons__wrapper,
+    .pentagons__wrapper {
+        display: flex;
+    }
+}
+
+
+/****
+  Animations for what__we__do and results sections
+*/
+
+.what__we__do > h2,
+.what__we__do > p {
+    animation: scrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes scrollReveal {
+    from {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icons__wrapper .item {
+    transition: transform 0.3s ease;
+}
+
+.icons__wrapper .item:hover {
+    transform: translateY(-5px);
+}
+
+/* ***
+   *************
+*/
+
+.results > h2,
+.results > p {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(white, white);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: textReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 90% cover 50%;
+
+}
+
+@keyframes textReveal {
+    to { background-size: 100% 100%; }
+}
+
+.pentagon__item {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    50% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}

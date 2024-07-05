@@ -23,14 +23,23 @@ you are not to use Javascript
 1. **Clone the Project**:
    ```bash
    git clone git@github.com:MouloudDev/alx_html_css.git
+   ```
 
-2. Navigate to the headphones Folder:
+2. **Navigate to the `headphones` Folder**:
 
-    Option 1: Open Directly in Browser
-        Navigate to the headphones folder and open index.html with your favorite browser.
-    Option 2: Use PowerShell Terminal
-        - Open the PowerShell terminal.
-        - Change the directory to the headphones folder by running:
-          cd headphones
-        - Open index.html with the default browser by running:
-          Start-Process index.html
+   - **Option 1: Open Directly in Browser**
+     - Navigate to the `headphones` folder and open `index.html` with your favorite browser.
+
+   - **Option 2: Use PowerShell Terminal**
+     - Open the PowerShell terminal.
+     - Change the directory to the `headphones` folder by running:
+       ```bash
+       cd headphones
+       ```
+     - Open `index.html` with the default browser by running:
+       ```bash
+       Start-Process index.html
+       ```
+
+By following these steps, you will be able to view the results of the project in your browser.
+```
